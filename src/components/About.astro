@@ -10,7 +10,7 @@ const { linkText, imageOne, imageTwo } = Astro.props;
 ---
 
 <section class="py-12">
-  <div class="grid grid-cols-2 p-8">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-12 p-8">
     <div>
       <h1 class="text-white text-5xl italic max-w-xs yellowText pb-8">
         BIENVENIDO A UMBRAL TRAINING
@@ -25,7 +25,7 @@ const { linkText, imageOne, imageTwo } = Astro.props;
         <a href={linkText}>Contáctanos</a>
       </p>
     </div>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 justify-items-center">
       <Image
         src={"/images/" + imageOne}
         width={600}

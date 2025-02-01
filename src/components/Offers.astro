@@ -2,32 +2,34 @@
 import ImageCard from "./ImageCard.astro";
 const offers = [
   {
-    imageURL: "dumbbells.jpg",
-    offerText: "Miércoles <br/> Parque Bicentenario <br/> 19:45 hrs",
-  },
-  {
-    imageURL: "rowing.jpg",
+    imageURL: "running_1.webp",
     offerText:
-      "Viernes <br/> Pista atlética Colegio Verbo Divino <br/> 19:00 hrs.",
+      "Miércoles <br/><br/><p class='text-lg'>Parque Bicentenario</p><br/>19:45 hrs",
   },
   {
-    imageURL: "skipping.jpg",
-    offerText: "Domingo <br/> Parque Bicentenario <br/> 08:00 hrs",
+    imageURL: "running_2.webp",
+    offerText:
+      "Viernes <br/><br/><p class='text-lg'>Pista atlética Colegio Verbo Divino</p><br/>19:00 hrs.",
+  },
+  {
+    imageURL: "running_3.webp",
+    offerText:
+      "Domingo <br/><br/><p class='text-lg'>Parque Bicentenario</p><br/>08:00 hrs",
   },
 ];
 ---
 
 <section class="py-12">
-  <h1 class="mb-8 max-w-96 mx-auto yellowText text-5xl italic uppercase">
+  <h1 class="mb-8 text-center yellowText text-5xl italic uppercase">
     ÚNETE A NUESTRO EQUIPO
   </h1>
-  <p class="max-w-96 mx-auto text-white">
+  <p class="mb-12 max-w-96 mx-auto text-white">
     ¿Quieres formar parte de una comunidad apasionada por correr? En Umbral
     Training, te ofrecemos la oportunidad de compartir tu historia, conectarte
     con otros corredores y disfrutar de entrenamientos en grupo. ¡Únete a
     nosotros y lleva tu carrera al siguiente nivel!
   </p>
-  <h1 class="mt-12 yellowText text-5xl italic uppercase text-center">
+  <h1 class="pt-12 yellowText text-5xl italic uppercase text-center">
     PUNTOS DE ENCUENTRO Y HORARIOS
   </h1>
   <div class="grid grid-cols-1 md:grid-cols-3">
