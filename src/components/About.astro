@@ -1,33 +1,45 @@
 ---
-import { Image } from 'astro:assets';
+import { Image } from "astro:assets";
 
 interface Props {
   linkText: string;
-  imageOne:string;
-  imageTwo:string;
+  imageOne: string;
+  imageTwo: string;
 }
 const { linkText, imageOne, imageTwo } = Astro.props;
 ---
 
 <section class="py-12">
-  <div class="grid grid-cols-2 p-4">
+  <div class="grid grid-cols-2 p-8">
     <div>
-      <h1 class="text-white text-5xl italic max-w-xs yellowText pb-8">About Our Fit Family</h1>
+      <h1 class="text-white text-5xl italic max-w-xs yellowText pb-8">
+        BIENVENIDO A UMBRAL TRAINING
+      </h1>
       <p class="text-white max-w-sm">
-        Astraeus was founded in 2001 by a husband and wife team, Bobby and Dora Graff. Since then, we have expanded to over 115 locations nationwide!
+        Somos un equipo de running ubicado en Santiago de Chile. Nuestra pasión
+        es el running y el trail. Estamos para ayudarte y acompañarte a alcanzar
+        tus metas y objetivos. Si estás buscando un grupo motivado y
+        comprometido, ¡has llegado al lugar correcto!
       </p>
       <p class="text-white mt-8 underline">
-        <a href={linkText}>Learn more</a>
+        <a href={linkText}>Contáctanos</a>
       </p>
     </div>
-    <div class="grid grid-cols-2">
-        <Image src={'/images/'+imageOne} 
-        width={600} 
-        height={600/1.5} 
-        alt="Gym Instructor" 
-        class="rounded-md object-cover w-48"/>
-        <Image src={'/images/'+imageTwo}
-         width={600} height={600/1.5} alt="Boxing Instructor" class="rounded-md object-cover w-48 pt-8"/>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
+      <Image
+        src={"/images/" + imageOne}
+        width={600}
+        height={600 / 1.5}
+        alt="Gym Instructor"
+        class="rounded-md object-cover w-48 h-full"
+      />
+      <Image
+        src={"/images/" + imageTwo}
+        width={600}
+        height={600 / 1.5}
+        alt="Boxing Instructor"
+        class="rounded-md object-cover w-48 h-full"
+      />
     </div>
   </div>
 </section>

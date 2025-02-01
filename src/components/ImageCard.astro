@@ -13,5 +13,5 @@ const imageStyle = {
   class="py-48 bg-cover m-8 bg-gray-700 bg-blend-multiply"
   style={imageStyle}
 >
-  <h2 class="text-white uppercase text-4xl italic">{text}</h2>
+  <h2 set:html={text} class="p-8 text-white uppercase text-4xl italic" />
 </div>
