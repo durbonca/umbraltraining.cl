@@ -10,14 +10,17 @@ const content = [
   {
     heading: "Redes sociales",
     info: "@Umbral_Training",
+    href: "https://www.instagram.com/umbral_training/",
   },
   {
     heading: "Correo",
     info: "info.umbraltraining@gmail.com",
+    href: "mailto:info.umbraltraining@gmail.com",
   },
   {
     heading: "Teléfono",
     info: "+56 9 4403 2001",
+    href: "tel:+56944032001",
   },
 ];
 ---
@@ -37,7 +40,9 @@ const content = [
         content.map((item) => (
           <div class="p-12">
             <h1 class="uppercase text-2xl italic">{item.heading}</h1>
-            <p>{item.info}</p>
+            <a href={item.href} target="_blank">
+              {item.info}
+            </a>
           </div>
         ))
       }
