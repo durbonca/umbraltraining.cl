@@ -3,9 +3,9 @@ const plans = [
   {
     profileURL: "plan_1.jpeg",
     plans:
-      "Mensual $ 40.000 </br> Trimestral $ 110.000 </br> Semestral $ 200.000",
+      "Mensual $ 45.000 </br> Trimestral $ 120.000 </br> Semestral $ 210.000 </br> Anual $ 390.000",
     price: 40000,
-    title: "Plan total 3 días presenciales + planificación.",
+    title: "Plan total 4 días presenciales + planificación.",
   },
   {
     profileURL: "plan_2.webp",
@@ -21,9 +21,22 @@ const plans = [
 ---
 
 <div class="section py-12">
-  <h1 class="yellowText text-5xl italic uppercase text-center">
-    Planes de entrenamiento
-  </h1>
+  <div class="max-w-2xl mx-auto">
+    <h1 class="yellowText text-5xl italic uppercase text-left m-4">
+      Planes de entrenamiento
+    </h1>
+    <div class=" flex flex-col justify-center items-start m-4">
+      <h2 class="text-3xl text-white font-bold">Plan total : <span class="text-yellow-500">4 días presenciales + planificación.</span></h2>
+      <div class="flex flex-col md:flex-row justify-end items-end">
+        <ul class="text-lg text-white font-bold mt-4 pl-8 list-disc">
+          <li>Mensual $ 45.000</li> 
+          <li> Trimestral $ 120.000</li> 
+          <li>Semestral $ 210.000</li> 
+          <li> Anual $ 390.000</li>
+        </ul>
+      </div>
+    </div>
+  </div>
   <div class="grid grid-cols-1 md:grid-cols-3">
     {
       plans.map((profile) => (
@@ -33,10 +46,10 @@ const plans = [
             alt="Testimonial"
             class="object-cover w-full h-96"
           />
-          <div class="flex-1 yellowBG p-8">
+          <!-- <div class="flex-1 yellowBG p-8">
             <p class="text-lg pb-4 font-bold">{profile.title}</p>
             <div set:html={profile.plans} />
-          </div>
+          </div> -->
         </div>
       ))
     }
